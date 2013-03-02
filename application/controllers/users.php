@@ -14,11 +14,7 @@ class Users_Controller extends Base_Controller {
 		return View::make('users.signup');
 	} 
 
-<<<<<<< HEAD
 	public function action_signin(){
 		return View::make('users.signin');
 	}
-	
-=======
->>>>>>> d63f0a8c0982c8ffee06d44069bad75910785d47
 }
