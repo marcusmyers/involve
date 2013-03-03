@@ -9,7 +9,7 @@ body {
 
 .logged-in a{
   background-color: #999;
-  font-color: white;
+  color: white;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 2px;
@@ -19,9 +19,7 @@ body {
   border-radius: 5px;
 }
 
-.nav-pills a{
-  color: #999;
-}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
