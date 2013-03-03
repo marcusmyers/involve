@@ -22,10 +22,10 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Log In</a></li>
+          <li><a href="/users/login">Log In</a></li>
         </ul>
         <h3 class="muted">Involve</h3>
       </div>
