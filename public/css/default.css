@@ -3,6 +3,13 @@ body {
   padding-bottom: 40px;
 }
 
+.nav-pills> .active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+  background-color: #999;
+}
+
+.nav-pills a{
+  color: #999;
+}
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -89,7 +96,7 @@ body {
 
 #main-container ul li {
   float: left;
-  margin: 0 5px;
+  margin: 5px 5px;
 
 }
 
@@ -106,17 +113,23 @@ body {
 
 #main-container ul li a:hover {
   border: solid 20px lightgreen;
-  color: lightgreen;
+  font-color: lightgreen;
 }
 
-#main-container ul li a, h2{
+#main-container ul li a{
   color: lightblue;
   font-size: 40px;
   margin: 0px;
   padding: 0px;
 }
 
-p {
+#parent-content h2{
+  color: lightblue;
+  font-size: 40px;
+  line-height: 35px;
+}
+
+#parent-content p {
   color: lightblue;
   font-size: 30px;
   line-height: 35px;
