@@ -54,7 +54,11 @@ class Users_Controller extends Base_Controller {
         );
 
         if( Auth::attempt($credentials)) {
-            return Redirect::to('users');
+        	if(Auth::user()->isparent){
+        		return Redirect::to('users/parent');
+        	} else {
+            	return Redirect::to('users/nanny');
+        	}
         } else {
             echo "Failed to login!";
         }
