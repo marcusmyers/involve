@@ -30,23 +30,17 @@ class Users_Controller extends Base_Controller {
 		return View::make('users.signin');
 	}
 
+	public function action_signupuser()
+	{
+		
+	}
+
+	/* Auth Func */
+
 	public function action_authenticate() 
 	{
 		$email = Input::get('email');
         $password = Input::get('password');
-
-
-        // $new_user = Input::get('new_user', 'off');
-        // try {
-        //     $user = new User();
-        //     $user->email = $email;
-        //     $user->password = Hash::make($password);
-        //     $user->save();
-        //     Auth::login($user);
-        //     return Redirect::to('users');
-        // }  catch( Exception $e ) {
-        //     echo "Faield to create new user!";
-        // }
        
         $credentials = array(
             'username' => $email,
