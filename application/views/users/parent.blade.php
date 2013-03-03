@@ -1,4 +1,4 @@
-@layout('layouts/parent')
+@layout('layouts/main')
 @section('content')
 <div id='content'>
 	<h2>Hello!</h2>
@@ -11,7 +11,7 @@
 	<div id='main-container'>
 		<ul class='main-choice'>
           <li id='block-me'>
-          	<a href="#">
+          	<a href="./child">
           		<h2>Kids</h2>
           	</a>
           </li>
