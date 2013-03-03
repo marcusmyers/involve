@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Involve</title>
+    <title>Project X</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="iPads Signout Web App to see how many are available for the building">
     <meta name="author" content="Technology Department">
@@ -27,7 +27,7 @@
           <li><a href="#">Contact</a></li>
           <li><a href="/users/login">Log In</a></li>
         </ul>
-        <h3 class="muted">Involve</h3>
+        <h3 class="muted">Project X</h3>
       </div>
 
       <hr>
