@@ -45,6 +45,11 @@
       </div>
 
     </div> <!-- /container -->
+    @section('modals')
+    @if (Auth::check())
+        @include('plugins.add_modal')
+    @endif
+    @yield_section
 
     <!-- Le javascript
     ================================================== -->
