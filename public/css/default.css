@@ -19,7 +19,9 @@ body {
   border-radius: 5px;
 }
 
-
+.logged-in a:hover{
+  color: #999;
+}
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
