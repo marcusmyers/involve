@@ -6,12 +6,12 @@ class Child extends Eloquent {
 
 	public function user()
 	{
-		return $this->has_many_and_belongs_to('User');
+		return $this->has_many_and_belongs_to('User', 'ChildUser');
 	}
 
 	public function calendarEvent()
 	{
-		return $this->has_many_and_belongs_to('CalendarEvent');
+		return $this->has_many_and_belongs_to('CalendarEvent', 'ChildUsrCalEvt');
 	}
 
 	public function medical()
