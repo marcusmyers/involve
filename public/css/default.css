@@ -9,6 +9,14 @@ body {
 
 .logged-in {
   background-color: #999;
+  font-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .nav-pills a{
