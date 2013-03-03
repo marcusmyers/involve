@@ -7,6 +7,10 @@ body {
   background-color: #999;
 }
 
+.active-blue {
+  color: rgb(148, 174, 255);
+}
+
 .nav-pills a{
   color: #999;
 }
@@ -98,7 +102,6 @@ body {
 #main-container ul li {
   float: left;
   margin: 5px 5px;
-
 }
 
 #main-container ul li a {
