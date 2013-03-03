@@ -10,16 +10,15 @@
             <label class="control-label" for="inputGender">Gender</label>
             <div class="controls">
                 <select id="inputType" name="addlocttype">
-                   
-                    <option>Test</option>
-                    <option>Test2</option>
-                    <option>Test3</option>
+                    @foreach ($locos as $loco)
+                    <option value="{{$loco->id}}">{{$loco->addlocttype}}</option>
+                    @endforeach
                 </select>
             </div>
         </form>
     </div>
     <div class="modal-footer">
         <a href="#" class="btn" data-dismiss="modal">Cancel</a>
-        <button type="button" onclick="$('#phone_modal_form').submit();" class="btn btn-primary">Submit</a>
+        <button type="button" onclick="$('#phone_modal_form').submit();" class="btn btn-primary">Add</a>
     </div>
 </div>

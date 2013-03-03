@@ -22,7 +22,7 @@
 			<input type="text" id="inputFName" name="fname" placeholder="555-555-5555">
 			</div>
 			<div class="controls">
-				<select id="inputType" name="gender">
+				<select id="inputType" name="addlocttype">
 					@foreach ($locos as $loco)
 					<option value="{{$loco->id}}">{{$loco->addlocttype}}</option>
 					@endforeach

@@ -18,7 +18,17 @@
 			<div class="span3"><h2>{{ Auth::user()->fname}} {{ Auth::user()->lname}}</h2></div>
 			</div>
 			<hr>
+			<h3>Phone Numbers</h3>
+			<hr>
+			@foreach($phones as $phone)
+				{{ $phone->phonenumb }}
+			@endforeach
 		</div>
 	</div>
 </div>
 @endsection
+@section('modals')
+    @if (Auth::check())
+        @include('plugins.add_modal')
+    @endif
+ @endsection

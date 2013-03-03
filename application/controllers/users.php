@@ -5,10 +5,18 @@ class Users_Controller extends Base_Controller {
 	public function action_index()
 	{
 		//echo Hash::make("test");
-		$user = User::find(1);
+		//$user = User::find(1);
+		$user = Auth::user();
+		echo "USER";
 		var_dump($user);
 		$phones = User::find(1)->phones()->get();
+		echo "<br/><br/>PHONES";
 		var_dump($phones);
+
+		$loco = LocationType::all();
+
+		echo "<br/><br/>Locations";
+		var_dump($loco);	
 		// print sizeof($phones);
 		// foreach ($phones as $phone) {
 		// 	print $phone->phonenumb;
@@ -34,7 +42,9 @@ class Users_Controller extends Base_Controller {
 	{
 		if(Auth::user()){
 			$user = Auth::user();
-			return View::make('users.profile');
+			$loco = LocationType::all();
+			$phones = $user->phones()->get();
+			return View::make('users.profile',array('locos'=>$loco,'phones'=>$phones));
 		} else {
 			return Redirect::to('users/login');
 		}

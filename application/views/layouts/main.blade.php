@@ -22,7 +22,7 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           @if (Auth::user())
@@ -32,7 +32,7 @@
             <li><a href="/users/login">Log In</a></li>
           @endif
         </ul>
-        <h3 class="muted">Project X</h3>
+        <h3 class="muted">Guardian</h3>
       </div>
 
       <hr>
@@ -41,15 +41,12 @@
 
       <hr>
       <div class="footer">
-        <p>&copy; Involve 2013</p>
+        <p>&copy; Guardian 2013</p>
       </div>
 
     </div> <!-- /container -->
-    @section('modals')
-    @if (Auth::check())
-        @include('plugins.add_modal')
-    @endif
-    @yield_section
+    @yield('modals')
+    
 
     <!-- Le javascript
     ================================================== -->

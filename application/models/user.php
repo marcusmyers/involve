@@ -6,12 +6,12 @@ class User extends Eloquent {
 
 	public function addresses()
 	{
-		return $this->has_many_and_belongs_to('Address');
+		return $this->has_many_and_belongs_to('Address', 'UserAddress');
 	}
 
 	public function children()
 	{
-		return $this->has_many_and_belongs_to('Child');
+		return $this->has_many_and_belongs_to('Child', 'ChildUser');
 	}
 
 	public function phones()

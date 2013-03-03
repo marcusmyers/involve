@@ -148,3 +148,10 @@ body {
 }
 
 /* ===== end of parent view ===== */
+
+/* ====== start of child view ==== */
+
+table td {
+  font-size: 24px;
+}
+
