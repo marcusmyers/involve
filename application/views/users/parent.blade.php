@@ -1,6 +1,6 @@
 @layout('layouts/parent')
 @section('content')
-
+<div id='parent-content'>
 	<h2>Hello!</h2>
 
 	<p>
@@ -29,4 +29,5 @@
       	  </li>
         </ul>
 	</div>
+</div>
 @endsection
