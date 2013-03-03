@@ -4,11 +4,11 @@ body {
 }
 
 .nav-pills> .active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
-  background-color: #999;
+   background-color: rgb(148, 174, 255);
 }
 
-.active-blue {
-  color: rgb(148, 174, 255);
+.logged-in {
+  background-color: #999;
 }
 
 .nav-pills a{
