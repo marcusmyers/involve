@@ -37,7 +37,31 @@ class Users_Controller extends Base_Controller {
 
 	public function action_signupuser()
 	{
-		
+		$email = Input::get('email');
+		$fname = Input::get('fname');
+		$lname = Input::get('lname');
+		$password = Input::get('password');
+		$gender = Input::get('gender');
+
+		$user = new User();
+
+		try {
+			$user->email = $email;
+			$user->password = Hash::make($password);
+			$user->fname = $fname;
+			$user->lname = $lname;
+			$user->gender = $gender;
+			$user->isparent = '1';
+			
+			
+			$user->save();
+			
+
+			Auth::login($user);
+			return Redirect::to('users/parent');
+		} catch(Exception $e){
+			echo "Failed to create new user!";
+		}
 	}
 
 	/* Auth Func */

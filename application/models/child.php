@@ -1,6 +1,7 @@
 <?php
 
 class Child extends Eloquent {
+	public static $timestamps = false;
 	public static $table = "Child";
 
 	$result = brando50_involve::Child('table')
