@@ -20,6 +20,11 @@ class Users_Controller extends Base_Controller {
 		return View::make('users.parent');
 	}
 
+	public function action_child()
+	{
+		return View::make('users.child');
+	}
+
 	public function action_signup()
 	{
 		return View::make('users.signup');

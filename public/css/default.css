@@ -108,7 +108,7 @@ body {
   width: 180px;
   height: 180px;
   text-decoration: none;
-  border: solid 20px rgb(102, 138, 255);
+  border: solid 20px rgb(148, 174, 255);
   border-radius: 30px;
 }
 
@@ -124,14 +124,14 @@ body {
   padding: 0px;
 }
 
-#parent-content h2{
-  color: rgb(102, 138, 255);
+#content h2{
+  color: rgb(148, 174, 255);
   font-size: 40px;
   line-height: 35px;
 }
 
-#parent-content p {
-  color: rgb(102, 138, 255);
+#content p {
+  color: rgb(148, 174, 255);
   font-size: 30px;
   line-height: 35px;
 }

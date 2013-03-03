@@ -1,6 +1,6 @@
 @layout('layouts/parent')
 @section('content')
-<div id='parent-content'>
+<div id='content'>
 	<h2>Hello!</h2>
 
 	<p>
