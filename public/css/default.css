@@ -7,7 +7,7 @@ body {
    background-color: rgb(148, 174, 255);
 }
 
-.logged-in {
+.logged-in a{
   background-color: #999;
   font-color: white;
   padding-top: 8px;
