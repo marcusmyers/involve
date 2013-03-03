@@ -25,7 +25,12 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="/users/login">Log In</a></li>
+          @if (Auth::user())
+            <li><a href="/users/logout">Log Out</a></li>
+            <li class="active"><a href="#">Hi {{Auth::user()->fname}}!</a></li>
+          @else
+            <li><a href="/users/login">Log In</a></li>
+          @endif
         </ul>
         <h3 class="muted">Project X</h3>
       </div>
