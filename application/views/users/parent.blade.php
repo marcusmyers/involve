@@ -23,7 +23,7 @@
           </li>
           
           <li id='block-me'>
-          	<a href="#">
+          	<a href="/users/profile">
           		<h2>Profile</h2>
           	</a>
       	  </li>
