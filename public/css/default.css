@@ -62,7 +62,8 @@ body {
 .form-signin input[type="text"],
 .form-signin input[type="password"],
 .form-signup input[type="text"],
-.form-signup input[type="password"]{
+.form-signup input[type="password"]
+.form-signup input[type="select"]{
   font-size: 16px;
   height: auto;
   margin-bottom: 15px;
@@ -101,13 +102,13 @@ body {
 }
 
 #main-container ul li a {
-  background-color: white;
+  background-color: lightblue;
   text-align: center;
   display: block;
   width: 180px;
   height: 180px;
   text-decoration: none;
-  border: solid 20px lightblue;
+  border: solid 20px rgb(102, 138, 255);
   border-radius: 30px;
 }
 
@@ -117,20 +118,20 @@ body {
 }
 
 #main-container ul li a{
-  color: lightblue;
+  color: rgb(102, 138, 255);
   font-size: 40px;
   margin: 0px;
   padding: 0px;
 }
 
 #parent-content h2{
-  color: lightblue;
+  color: rgb(102, 138, 255);
   font-size: 40px;
   line-height: 35px;
 }
 
 #parent-content p {
-  color: lightblue;
+  color: rgb(102, 138, 255);
   font-size: 30px;
   line-height: 35px;
 }
