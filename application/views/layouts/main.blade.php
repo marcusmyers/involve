@@ -27,7 +27,7 @@
           <li><a href="#">Contact</a></li>
           @if (Auth::user())
             <li><a href="/users/logout">Log Out</a></li>
-            <li class="logged-in"><a href="#">Hi {{Auth::user()->fname}}!</a></li>
+            <li class="logged-in"><a href="/users/profile">Hi {{Auth::user()->fname}}!</a></li>
           @else
             <li><a href="/users/login">Log In</a></li>
           @endif

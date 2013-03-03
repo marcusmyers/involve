@@ -25,15 +25,25 @@ class Users_Controller extends Base_Controller {
 		return View::make('users.child');
 	}
 
-	public function action_signup()
-	{
-		return View::make('users.signup');
-	} 
-
 	public function action_login()
 	{
 		return View::make('users.signin');
 	}
+
+	public function action_profile()
+	{
+		if(Auth::user()){
+			$user = Auth::user();
+			return View::make('users.profile');
+		} else {
+			return Redirect::to('users/login');
+		}
+	}
+
+	public function action_signup()
+	{
+		return View::make('users.signup');
+	} 
 
 	public function action_signupuser()
 	{
