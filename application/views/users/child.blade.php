@@ -1,8 +1,18 @@
 @layout('layouts/main')
 @section('content')
-<div id='content'>
-  <h2>This is a list of your children you have signed up: </h2>
-  
-  <h2>Add Child</h2>
+<div class="content">
+  <div class="row">
+    <div class="span2">
+      <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li class="active"><a href="#">Add a Child</a></li>
+              <li><a href="#">Possible option</a></li>
+              <li><a href="#">Possible option</a></li>
+            </ul>
+          </div><!--/.well -->
+    </div>
+    
+  </div>
 </div>
 @endsection
