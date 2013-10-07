@@ -3,7 +3,13 @@
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
+class User extends BaseModel implements UserInterface, RemindableInterface {
+    /**
+    * Rules for the model
+    *
+    * @var array
+    */
+    public static $rules = ['email' => 'required|email', 'password' => 'required'];
 
 	/**
 	 * The database table used by the model.
@@ -14,7 +20,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	/**
 	 * The attributes excluded from the model's JSON form.
-	 *
+	 *strtotime
 	 * @var array
 	 */
 	protected $hidden = array('password');
@@ -49,4 +55,23 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 
+	/**
+	* Set the password for the user. (hash)
+	*
+	* 
+	*/
+	public function setPasswordAttribute($password)
+	{
+		$this->attributes['password'] =  Hash::make($password);
+	}
+
+
+    /**
+    * Has Many Children
+    *
+    */
+    public function children()
+    {
+    	$this->hasMany('Child');
+    }
 }
